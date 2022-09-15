@@ -1,0 +1,261 @@
+@import url(../fonts/fonts.css);
+
+:root {
+    --light-color: #FFFFFF;
+    --prymary-color: #7036BA;
+    --secondary-color: #00BFB4;
+}
+
+body {
+    font-family: "Raleway-Regular";
+    color: var(--light-color);
+
+}
+body::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(184, 184, 184);
+    border-radius: 10px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 2px;
+  }
+.wrapper {
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+}
+
+.header {
+
+}
+
+.navbar-background {
+    background: var(--prymary-color);
+}
+
+.nav-link {
+    --light-color: #FFFFFF;
+}
+
+.navbar-brand {
+    --light-color: #FFFFFF;
+    font-size: 25px;
+}
+
+.navbar-brand  > span {
+    font-family: "Raleway-SemiBold";
+}
+
+.logo {
+    width: 25px;
+    height: 25px;
+    padding-right: 5px;
+}
+.navbar-toggler {
+    border: none;
+}
+.navbar-toggler:focus, 
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-start {
+    background-color: var(--secondary-color);
+    border: none;
+    color: var(--light-color);
+    border-radius: 50px;
+    width: 261px;
+    height: 65px;
+
+    display: grid;
+    place-items: center;
+    font-size: 25px;
+    font-family: "Raleway-Bold";
+}
+.btn-start:hover{
+    opacity: 0.9;
+}
+
+.btn-start:active {
+    transform: scale(0.98);
+}
+.row {
+    /* border: 1px solid green; */
+}
+
+.container {
+    /* border: 1px solid red; */
+}
+
+.title_text_wrapper {
+
+}
+
+
+/* about */
+
+.about_img > img {
+    width: 100%;
+}
+
+.start {
+    background: var(--prymary-color);
+    background-size: cover;
+
+}
+
+.hts {
+    font-weight: 700;
+    font-size: 50px;
+    font-family: "Raleway-Bold";
+
+}
+
+.hts_smal {
+    font-weight: 400;
+font-size: 18px;
+font-family: "Raleway-Regular";
+
+}
+.hts_s {
+    font-weight: 400;
+font-size: 20px;
+
+text-align: justify;
+font-family: "Raleway-Regular";
+
+}
+
+
+.text_number_h {
+    font-weight: 600;
+font-size: 75px;
+padding-left: 50px;
+font-family: "Raleway-SemiBold";
+
+}
+
+/* Features */
+.text_number_h5 {
+    font-weight: 700;
+    font-size: 20px;
+    font-family: "Raleway-Bold";
+}
+.text_number_h5_p {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "Raleway-Regular";
+}
+
+.block_pricing {
+    background: var(--prymary-color);
+    background-size: cover;
+}
+
+
+/* Pricing */
+
+.block_tariff {
+    width: 350px;
+    padding-bottom: 15px;
+    background: #A76BF2;
+    border-radius: 5px;
+}
+
+.text_number_h3 {
+    font-weight: 700;
+    font-size: 35px;
+    font-family: "Raleway-Bold";
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.btn_choose {
+    border: 3px solid white;
+    border-radius: 50px;
+    width: 150px;
+    height: 50px;
+    color: var(--light-color);
+    background-color: var(--primary-color);
+
+}
+
+.btn_choose:hover{
+    opacity: 0.9;
+}
+
+.btn_choose:active {
+    transform: scale(0.9);
+}
+
+.inst {
+    color: var(--prymary-color);
+}
+
+.faq {
+    background: var(--prymary-color);
+    background-size: cover;
+}
+.footer {
+    background: var(--prymary-color);
+    background-size: cover;
+}
+.box_input {
+    width: 540px;
+    height: 45px;
+}
+@media screen and (max-width: 414px) {
+    .box_input {
+        width: 380px;
+        height: 45px;
+}
+
+}
+
+.accordion-item {
+    background-color: var(--prymary-color);
+border: none;
+}
+.accordion-button {
+    background-color: var(--prymary-color);
+    border: none;
+    color: white;
+}
+.accordion-body {
+    color: white;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--prymary-color);
+    color: white;
+    box-shadow: none;
+}
+.accordion-button.collapsed {
+    color: white;
+    box-shadow: none;
+ 
+}
+.accordion-body:active {
+    opacity: 0.8;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: none;
+    content: "∧";
+    color:var(--light-color);
+}
+
+.accordion-button.collapsed::after {
+    background-image: none;
+    content: "∨";
+    color:var(--light-color);
+}
